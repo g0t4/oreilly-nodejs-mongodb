@@ -1,0 +1,41 @@
+extends ../layout
+
+block content
+  h1 Edit user
+
+  form(method="post")
+    fieldset.form-group
+      label(for="name") Alias:
+      input.form-control(name="alias", type="text", value="#{user.alias}")
+
+      label Roles:
+      .checkbox
+        label
+          input(name="roles", type="checkbox", value="admin", checked=userHasRole("admin"))
+          | Admin
+      .checkbox
+        label
+          input(name="roles", type="checkbox", value="moderator", checked=userHasRole("moderator"))
+          | Moderator
+
+      label(for="phone") Phone:
+      input.form-control(name="contact.phone", type="text", value="#{user.contact.phone}")
+
+      label(for="email") Email:
+      input.form-control(name="contact.email", type="email", value="#{user.contact.email}")
+
+      label(for="address.lines") Address:
+      textarea.form-control(name="address.lines")
+        = user.address.lines.join('\n')
+
+      label(for="city") City:
+      input.form-control(name="address.city", type="text", value="#{user.address.city}")
+
+      label(for="state") State:
+      input.form-control(name="address.state", type="text", value="#{user.address.state}")
+
+      label(for="zip") Zip:
+      input.form-control(name="address.zip", type="zip", value="#{user.address.zip}")
+
+    button.btn.btn-primary(type="submit") Save user
+    a.btn.btn-default(href="/admin/users") Cancel

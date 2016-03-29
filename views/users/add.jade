@@ -1,0 +1,41 @@
+extends ../layout
+
+block content
+  h1 Create a new user
+
+  form(method="post")
+    fieldset.form-group
+      label(for="name") Alias:
+      input.form-control(name="alias", type="text")
+
+      label Roles:
+      .checkbox
+        label
+          input(name="roles", type="checkbox", value="admin")
+          | Admin
+      .checkbox
+        label
+          input(name="roles", type="checkbox", value="moderator")
+          | Moderator
+
+      label(for="phone") Phone:
+      input.form-control(name="contact.phone", type="text")
+
+      label(for="email") Email:
+      input.form-control(name="contact.email", type="email")
+
+      label(for="address.lines") Address:
+      textarea.form-control(name="address.lines")
+
+      label(for="city") City:
+      input.form-control(name="address.city", type="text")
+
+      label(for="state") State:
+      input.form-control(name="address.state", type="text")
+
+      label(for="zip") Zip:
+      input.form-control(name="address.zip", type="text")
+
+
+    button.btn.btn-primary(type="submit") Create new user
+    a.btn.btn-default(href="/admin/users") Cancel

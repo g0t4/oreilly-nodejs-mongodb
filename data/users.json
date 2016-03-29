@@ -1,0 +1,58 @@
+[
+  {
+    "alias": "wes",
+    "id": "44f885e8-87e9-4911-973c-4074188f408a",
+    "roles": [
+      "admin"
+    ],
+    "contact": {
+      "phone": "(477) 838-0798",
+      "email": "wes@email.com"
+    },
+    "address": {
+      "lines": [
+        "3939 Rondorp Ridge",
+        "Apt 65"
+      ],
+      "city": "New York",
+      "state": "NY",
+      "zip": "10098"
+    }
+  },
+  {
+    "alias": "pax",
+    "id": "1d7975e3-d2ca-4836-b9b0-967ab1ccb61f",
+    "roles": [
+      "moderator"
+    ],
+    "contact": {
+      "phone": "(837) 838-6236",
+      "email": "pax@email.com"
+    },
+    "address": {
+      "lines": [
+        "1 Apache Road",
+        "Suite 301"
+      ],
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98765"
+    }
+  },
+  {
+    "alias": "john",
+    "id": "9841a17f-7a55-4bf8-bb90-a828cb8d14d1",
+    "contact": {
+      "phone": "(402) 838-4544",
+      "email": "john@email.com"
+    },
+    "address": {
+      "lines": [
+        "100 Bab Lane"
+      ],
+      "city": "Lincoln",
+      "state": "NE",
+      "zip": "76852"
+    }
+  }
+]

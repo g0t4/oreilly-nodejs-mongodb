@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.1",
+    "lodash": "^4.5.1",
+    "node-uuid": "^1.4.7"
+  }
+}
