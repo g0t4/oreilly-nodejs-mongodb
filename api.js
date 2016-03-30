@@ -20,7 +20,8 @@ router.route("/rooms/:roomId/messages")
       .filter(m => m.roomId === roomId)
       .map(m => {
         var user = _.find(users, u => u.id === m.userId);
-        return {text: `${user.alias}: ${m.text}`};
+        var userName = user ? user.alias : "unknown";
+        return {text: `${userName}: ${m.text}`};
       });
 
     var room = _.find(rooms, r => r.id === roomId);
